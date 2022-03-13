@@ -18,6 +18,14 @@ canvas {
   top: 0;
   left: 0;
 }
+.box {
+  position: fixed;
+  border: 3px solid #fff;
+  top: 0;
+  left: 0;
+  width: 99%;
+  height: 99%;
+}
 header {
   position: fixed;
   top: 0;
@@ -30,7 +38,7 @@ header {
 .logOut {
   margin: 0 auto;
   margin-top: 0px;
-  width: 90%;
+  width: 50%;
   padding: 5px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -42,10 +50,9 @@ h2 {
   margin: 0;
   font-weight: 300;
   color: #221c53;
-  font-size: 40px;
+  font-size: 30px;
   line-height: 35px;
   padding: 0;
-  padding-top: 20px;
 }
 .secondText {
   font-family: 'Roboto Serif', serif;
@@ -54,7 +61,7 @@ h2 {
 }
 .logoTwo {
   font-weight: 100;
-  font-size: 33px;
+  font-size: 28px;
 }
 .main {
   position: absolute;
