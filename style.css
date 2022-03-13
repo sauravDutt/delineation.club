@@ -18,14 +18,6 @@ canvas {
   top: 0;
   left: 0;
 }
-.box {
-  position: fixed;
-  border: 3px solid #fff;
-  top: 0;
-  left: 0;
-  width: 99%;
-  height: 99%;
-}
 header {
   position: fixed;
   top: 0;
@@ -45,10 +37,15 @@ header {
   background-color: #fff;
   box-shadow: 0px 15px 10px -15px rgba(27, 23, 23, 0.452);
 }
+a {
+  text-decoration: none;
+  color: #221c53;
+}
 h2 {
   font-family: 'Logo';
   margin: 0;
   font-weight: 300;
+  cursor: pointer;
   color: #221c53;
   font-size: 30px;
   line-height: 35px;
@@ -59,22 +56,3 @@ h2 {
   font-weight: 100;
   font-size: 20px;
 }
-.logoTwo {
-  font-weight: 100;
-  font-size: 28px;
-}
-.main {
-  position: absolute;
-  width: 100%;
-  color: transparent;
-}
-
-/* @media screen and (max-width: 740px) {
-  .box {
-    position: fixed;
-    width: 95.3%;
-    height: 96.3%;
-    margin-left: 0.3%;
-    margin-top: 0.3%;
-  }
-} */
