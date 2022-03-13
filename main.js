@@ -27,20 +27,20 @@ scene.add(torus)
 
 const pointLight = new THREE.PointLight(0xffffff);
 const ambientLight = new THREE.AmbientLight(0xffffff);
-pointLight.position.set(5, 5, 5);
+pointLight.position.set(5, 15, 5);
 
 scene.add(pointLight, ambientLight);
 
-// const lightHelpher = new THREE.PointLightHelper(pointLight);
-// const gridHelper = new THREE.GridHelper(200, 50);
-// scene.add(lightHelpher, gridHelper);
+const lightHelpher = new THREE.PointLightHelper(pointLight);
+const gridHelper = new THREE.GridHelper(200, 50);
+scene.add(lightHelpher, gridHelper);
 
-// const controls = new OrbitControls(camera, renderer.domElement);
+const controls = new OrbitControls(camera, renderer.domElement);
 
 function addStar() {
   
-  const geometry = new THREE.SphereGeometry(0.15, 64, 32);
-  const material = new THREE.MeshStandardMaterial( { color: 0xFFFFFF});
+  const geometry = new THREE.SphereGeometry(0.09, 64, 32);
+  const material = new THREE.MeshStandardMaterial( { color: 0x5f4a80});
   const star = new THREE.Mesh(geometry, material);
 
   const [x, y, z] = Array(3).fill().map( () => THREE.MathUtils.randFloatSpread( 100 ));
@@ -49,9 +49,9 @@ function addStar() {
   scene.add(star);
 
 }
-Array(250).fill().forEach(addStar);
+Array(350).fill().forEach(addStar);
 
-
+scene.background = new THREE.Color(0xFFFFFF);
 
 
 // Moon
@@ -91,7 +91,7 @@ function animate() {
   moon.rotation.x += 0.005;
   moon.rotation.z += 0.0081
 
-  // controls.update();
+  controls.update();
 
   renderer.render( scene, camera);
 }

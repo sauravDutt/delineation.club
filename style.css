@@ -32,7 +32,7 @@ header {
   left: 0;
   text-align: center;
   width: 100%;
-  height: 9vh;
+  height: 20vh;
 
 }
 .logOut {
@@ -43,7 +43,7 @@ header {
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   background-color: #fff;
-  box-shadow: 0px 15px 10px -15px rgb(255, 255, 255);
+  box-shadow: 0px 15px 10px -15px rgba(27, 23, 23, 0.452);
 }
 h2 {
   font-family: 'Logo';
