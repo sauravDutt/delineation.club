@@ -29,7 +29,7 @@ header {
   margin: 0 auto;
   margin-top: 0px;
   width: 90%;
-  height: 80px;
+  height: 70px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   background-color: #fff;
@@ -37,6 +37,7 @@ header {
 h2 {
   font-family: 'Logo';
   margin: 0;
+  font-weight: 300;
   font-size: 40px;
   padding: 0;
 }

@@ -28,7 +28,7 @@ const pointLight = new THREE.PointLight(0xffffff);
 const ambientLight = new THREE.AmbientLight(0xffffff);
 pointLight.position.set(5, 5, 5);
 
-scene.add(pointLight, ambientLight);
+scene.add(pointLight);
 
 // const lightHelpher = new THREE.PointLightHelper(pointLight);
 // const gridHelper = new THREE.GridHelper(200, 50);
@@ -58,21 +58,18 @@ scene.background = spaceTexture;
 
 // Moon
 
-const moonTexture = new THREE.TextureLoader().load('earth.jpg');
-const normalTexture = new THREE.TextureLoader().load('normal.jpg')
-
 const moon = new THREE.Mesh(
-  new THREE.SphereGeometry(3, 32, 32),
+  new THREE.SphereGeometry(8, 32, 32),
   new THREE.MeshStandardMaterial( {
-    map: moonTexture,
-    normalMap: normalTexture
+    color: 0xffffff,
+    wireframe: true
   })
 );
 
 scene.add(moon);
 
 moon.position.z = 30;
-moon.position.setX(-5);
+moon.position.setX(-10);
 
 function moreCamera() {
   const t = document.body.getBoundingClientRect().top;
@@ -92,7 +89,9 @@ function animate() {
   torus.rotation.z += 0.01
 
 
-moon.rotation.y += 0.005;
+  moon.rotation.y += 0.005;
+  moon.rotation.x += 0.005;
+  moon.rotation.z += 0.0081
 
   // controls.update();
 
