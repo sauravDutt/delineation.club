@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@100;200;300&display=swap');
+
 body {
   background-color: #000;
 }
@@ -29,17 +31,30 @@ header {
   margin: 0 auto;
   margin-top: 0px;
   width: 90%;
-  height: 70px;
+
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   background-color: #fff;
+  box-shadow: 0px 15px 10px -15px rgba(21, 0, 59, 0.24);
 }
 h2 {
   font-family: 'Logo';
   margin: 0;
   font-weight: 300;
+  color: #221c53;
   font-size: 40px;
+  line-height: 35px;
   padding: 0;
+  padding-top: 20px;
+}
+.secondText {
+  font-family: 'Roboto Serif', serif;
+  font-weight: 100;
+  font-size: 20px;
+}
+.logoTwo {
+  font-weight: 100;
+  font-size: 33px;
 }
 .main {
   position: absolute;

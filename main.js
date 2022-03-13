@@ -18,6 +18,7 @@ camera.position.setZ(30);
 
 renderer.render( scene, camera );
 
+
 const geometry = new THREE.TorusGeometry(10, 3, 30, 100);
 const material = new THREE.MeshStandardMaterial( { color: 0x3F2EA3, wireframe: true} );
 const torus = new THREE.Mesh( geometry, material );
@@ -28,7 +29,7 @@ const pointLight = new THREE.PointLight(0xffffff);
 const ambientLight = new THREE.AmbientLight(0xffffff);
 pointLight.position.set(5, 5, 5);
 
-scene.add(pointLight);
+scene.add(pointLight, ambientLight);
 
 // const lightHelpher = new THREE.PointLightHelper(pointLight);
 // const gridHelper = new THREE.GridHelper(200, 50);
@@ -51,9 +52,6 @@ function addStar() {
 Array(250).fill().forEach(addStar);
 
 
-// BackGround
-const spaceTexture = new THREE.TextureLoader().load('space.png');
-scene.background = spaceTexture;
 
 
 // Moon
@@ -61,7 +59,7 @@ scene.background = spaceTexture;
 const moon = new THREE.Mesh(
   new THREE.SphereGeometry(8, 32, 32),
   new THREE.MeshStandardMaterial( {
-    color: 0xffffff,
+    color: 0x6359ba,
     wireframe: true
   })
 );
