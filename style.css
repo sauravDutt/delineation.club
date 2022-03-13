@@ -68,3 +68,13 @@ h2 {
   width: 100%;
   color: transparent;
 }
+
+/* @media screen and (max-width: 740px) {
+  .box {
+    position: fixed;
+    width: 95.3%;
+    height: 96.3%;
+    margin-left: 0.3%;
+    margin-top: 0.3%;
+  }
+} */
