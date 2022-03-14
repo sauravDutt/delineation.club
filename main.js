@@ -15,6 +15,7 @@ renderer.setPixelRatio( window.devicePixelRatio );
 renderer.setSize ( window.innerWidth, window.innerHeight );
 
 camera.position.setZ(30);
+camera.position.setY(5)
 
 renderer.render( scene, camera );
 
@@ -68,6 +69,30 @@ scene.add(moon);
 
 moon.position.z = 30;
 moon.position.setX(-10);
+
+const houseOne = new THREE.Mesh(
+  new THREE.BoxGeometry(10, 20, 5),
+  new THREE.MeshStandardMaterial({
+    color: 0x6359ba
+  })
+);
+
+const houseTwo = new THREE.Mesh(
+  new THREE.BoxGeometry(15, 30, 8),
+  new THREE.MeshStandardMaterial({
+    color: 0x6359ba
+  })
+);
+
+scene.add(houseOne);
+
+houseTwo.position.z = -40;
+houseTwo.position.x = 18;
+houseTwo.position.y = 15;
+
+houseOne.position.z = -34;
+houseOne.position.x = 15;
+houseOne.position.y = 10;
 
 function moreCamera() {
   const t = document.body.getBoundingClientRect().top;
