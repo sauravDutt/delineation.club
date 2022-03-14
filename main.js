@@ -15,7 +15,6 @@ renderer.setPixelRatio( window.devicePixelRatio );
 renderer.setSize ( window.innerWidth, window.innerHeight );
 
 camera.position.setZ(30);
-camera.position.setY(5)
 
 renderer.render( scene, camera );
 
@@ -31,7 +30,7 @@ const ambientLight = new THREE.AmbientLight(0xffffff);
 pointLight.position.set(5, 15, 5);
 
 scene.add(pointLight, ambientLight);
-
+ 
 const lightHelpher = new THREE.PointLightHelper(pointLight);
 const gridHelper = new THREE.GridHelper(200, 50);
 scene.add(lightHelpher, gridHelper);
