@@ -14,16 +14,41 @@ const renderer = new THREE.WebGLRenderer({
 renderer.setPixelRatio( window.devicePixelRatio );
 renderer.setSize ( window.innerWidth, window.innerHeight );
 
-camera.position.setZ(30);
+camera.position.setZ(40);
 
 renderer.render( scene, camera );
 
 
-const geometry = new THREE.TorusGeometry(10, 3, 30, 100);
+const geometry = new THREE.TorusGeometry(10, 1, 20, 50);
 const material = new THREE.MeshStandardMaterial( { color: 0x3F2EA3, wireframe: true} );
 const torus = new THREE.Mesh( geometry, material );
+const torusOne = new THREE.Mesh(
+  new THREE.TorusGeometry(12, 0.5, 10, 50),
+  new THREE.MeshStandardMaterial( { color: 0x3F2EA3, wireframe: true} )
+);
+torusOne.position.z = 50
+const torusTwo = new THREE.Mesh(
+  new THREE.TorusGeometry(6, 0.5, 4, 30),
+  new THREE.MeshStandardMaterial( 
+      { 
+        color: 0x3F2EA3, 
+        wireframe: true
+      } 
+    )
 
-scene.add(torus)
+);
+const torusThree = new THREE.Mesh(
+  new THREE.TorusGeometry(6, 0.5, 4, 30),
+  new THREE.MeshStandardMaterial( 
+      { 
+        color: 0x3F2EA3, 
+        wireframe: true
+      } 
+    )
+
+);
+
+scene.add(torus, torusOne, torusTwo, torusThree)
 
 const pointLight = new THREE.PointLight(0xffffff);
 const ambientLight = new THREE.AmbientLight(0xffffff);
@@ -57,7 +82,7 @@ scene.background = new THREE.Color(0xFFFFFF);
 // Moon
 
 const moon = new THREE.Mesh(
-  new THREE.SphereGeometry(8, 32, 32),
+  new THREE.SphereGeometry(5, 32, 32),
   new THREE.MeshStandardMaterial( {
     color: 0x6359ba,
     wireframe: true
@@ -66,26 +91,24 @@ const moon = new THREE.Mesh(
 
 scene.add(moon);
 
-moon.position.z = 30;
-moon.position.setX(-10);
 
 const houseOne = new THREE.Mesh(
-  new THREE.BoxGeometry(10, 20, 5),
+  new THREE.BoxGeometry(10, 20, 9),
   new THREE.MeshStandardMaterial({
     color: 0x6359ba
   })
 );
 
 const houseTwo = new THREE.Mesh(
-  new THREE.BoxGeometry(15, 30, 8),
+  new THREE.BoxGeometry(15, 30, 18),
   new THREE.MeshStandardMaterial({
-    color: 0x6359ba
+    color: 0x736bb0
   })
 );
 
-scene.add(houseOne);
+scene.add(houseOne, houseTwo);
 
-houseTwo.position.z = -40;
+houseTwo.position.z = -80;
 houseTwo.position.x = 18;
 houseTwo.position.y = 15;
 
@@ -110,6 +133,8 @@ function animate() {
   torus.rotation.y += 0.005;
   torus.rotation.z += 0.01
 
+  torusTwo.rotation.x += 0.01
+  torusThree.rotation.y += 0.01
 
   moon.rotation.y += 0.005;
   moon.rotation.x += 0.005;
