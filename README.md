@@ -1,3 +1,3 @@
 # Delineation.club
 
-### This is a Three js Dashbourd
+### This is a Three js Dashbord
