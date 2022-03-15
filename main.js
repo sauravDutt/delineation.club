@@ -108,7 +108,7 @@ const houseTwo = new THREE.Mesh(
 
 scene.add(houseOne, houseTwo);
 
-houseTwo.position.z = -80;
+houseTwo.position.z = -55;
 houseTwo.position.x = 18;
 houseTwo.position.y = 15;
 
