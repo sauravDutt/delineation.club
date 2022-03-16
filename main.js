@@ -102,17 +102,28 @@ const houseOne = new THREE.Mesh(
 );
 
 const houseTwo = new THREE.Mesh(
-  new THREE.BoxGeometry(15, 30, 18),
+  new THREE.BoxGeometry(10, 30, 15),
   new THREE.MeshStandardMaterial({
     color: 0x736bb0
   })
 );
 
-scene.add(houseOne, houseTwo);
+const houseThree = new THREE.Mesh(
+  new THREE.BoxGeometry(13, 40, 40),
+  new THREE.MeshStandardMaterial({
+    color: 0x604899
+  })
+);
+
+scene.add(houseOne, houseTwo, houseThree);
 
 houseTwo.position.z = -40;
-houseTwo.position.x = 18;
+houseTwo.position.x = 15;
 houseTwo.position.y = 15;
+
+houseThree.position.z = -27;
+houseThree.position.x = 32;
+houseThree.position.y = 20;
 
 houseOne.position.z = -14;
 houseOne.position.x = 15;
