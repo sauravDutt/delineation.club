@@ -115,7 +115,15 @@ const houseThree = new THREE.Mesh(
   })
 );
 
-scene.add(houseOne, houseTwo, houseThree);
+const houseOtherOne = new THREE.Mesh(
+  new THREE.BoxGeometry(10, 20, 15),
+  new THREE.MeshStandardMaterial({
+    color: 0x6359ba
+  })
+);
+
+
+scene.add(houseOne, houseTwo, houseThree, houseOtherOne);
 
 houseTwo.position.z = -40;
 houseTwo.position.x = 15;
@@ -128,6 +136,10 @@ houseThree.position.y = 20;
 houseOne.position.z = -14;
 houseOne.position.x = 15;
 houseOne.position.y = 10;
+
+houseOtherOne.position.z = -14;
+houseOtherOne.position.x = -20;
+houseOtherOne.position.y = 10;
 
 function moreCamera() {
   const t = document.body.getBoundingClientRect().top;
