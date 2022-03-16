@@ -28,7 +28,7 @@ const torusOne = new THREE.Mesh(
 );
 torusOne.position.z = 50
 const torusTwo = new THREE.Mesh(
-  new THREE.TorusGeometry(6, 0.5, 4, 30),
+  new THREE.TorusGeometry(5, 0.5, 4, 30),
   new THREE.MeshStandardMaterial( 
       { 
         color: 0x3F2EA3, 
@@ -38,7 +38,7 @@ const torusTwo = new THREE.Mesh(
 
 );
 const torusThree = new THREE.Mesh(
-  new THREE.TorusGeometry(6, 0.5, 4, 30),
+  new THREE.TorusGeometry(5, 0.5, 4, 30),
   new THREE.MeshStandardMaterial( 
       { 
         color: 0x3F2EA3, 
@@ -48,11 +48,11 @@ const torusThree = new THREE.Mesh(
 
 );
 
-scene.add(torus, torusOne, torusTwo, torusThree)
+scene.add( torusTwo, torusThree)
 
 const pointLight = new THREE.PointLight(0xffffff);
 const ambientLight = new THREE.AmbientLight(0xffffff);
-pointLight.position.set(5, 15, 5);
+pointLight.position.set(5, 20, -10);
 
 scene.add(pointLight, ambientLight);
  
@@ -84,8 +84,7 @@ scene.background = new THREE.Color(0xFFFFFF);
 const moon = new THREE.Mesh(
   new THREE.SphereGeometry(5, 32, 32),
   new THREE.MeshStandardMaterial( {
-    color: 0x6359ba,
-    wireframe: true
+    color: 0x85a3d4
   })
 );
 
@@ -93,7 +92,7 @@ scene.add(moon);
 
 
 const houseOne = new THREE.Mesh(
-  new THREE.BoxGeometry(10, 20, 9),
+  new THREE.BoxGeometry(10, 20, 15),
   new THREE.MeshStandardMaterial({
     color: 0x6359ba
   })
@@ -112,7 +111,7 @@ houseTwo.position.z = -55;
 houseTwo.position.x = 18;
 houseTwo.position.y = 15;
 
-houseOne.position.z = -34;
+houseOne.position.z = -14;
 houseOne.position.x = 15;
 houseOne.position.y = 10;
 
