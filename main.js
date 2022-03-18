@@ -90,9 +90,7 @@ const moon = new THREE.Mesh(
 
 scene.add(moon);
 
-moon.position.z = 90
-torusTwo.position.z = 90
-torusThree.position.z = 90
+
 
 const houseOne = new THREE.Mesh(
   new THREE.BoxGeometry(10, 20, 15),
