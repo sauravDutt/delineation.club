@@ -56,11 +56,11 @@ pointLight.position.set(5, 20, -10);
 
 scene.add(pointLight, ambientLight);
  
-const lightHelpher = new THREE.PointLightHelper(pointLight);
-const gridHelper = new THREE.GridHelper(200, 50);
-scene.add(lightHelpher, gridHelper);
+// const lightHelpher = new THREE.PointLightHelper(pointLight);
+// const gridHelper = new THREE.GridHelper(200, 50);
+// scene.add(lightHelpher, gridHelper);
 
-const controls = new OrbitControls(camera, renderer.domElement);
+// const controls = new OrbitControls(camera, renderer.domElement);
 
 function addStar() {
   
@@ -195,7 +195,7 @@ function animate() {
   moon.rotation.x += 0.005;
   moon.rotation.z += 0.0081
 
-  controls.update();
+  // controls.update();
 
   renderer.render( scene, camera);
 }

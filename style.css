@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@100;200;300&display=swap');
 
 body {
-  background-color: #000;
+  background-color: #fff;
 }
 body::-webkit-scrollbar {
   width: 0px;
@@ -65,4 +65,13 @@ h2 {
 }
 .logoBtn:hover {
   color: #221c5359;
+}
+
+.main {
+  width: 98%;
+  height: 3000vh;
+  z-index: 0;
+  margin: 0 auto;
+  margin-top: -20px;
+  position: absolute;
 }
