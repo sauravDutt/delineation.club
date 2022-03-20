@@ -127,19 +127,38 @@ const houseOtherTwo = new THREE.Mesh(
     color: 0x736bb0
   })
 );
+const houseOtherThree = new THREE.Mesh(
+  new THREE.BoxGeometry(13, 40, 40),
+  new THREE.MeshStandardMaterial({
+    color: 0x604899
+  })
+);
+const tent = new THREE.Mesh(
+  new THREE.ConeGeometry(6.78, 10, 64, 62, false, 6.29, 6.2),
+  new THREE.MeshBasicMaterial({
+    color: 0x6c7a91
+  })
+);
 
 
-scene.add(houseOne, houseTwo, houseThree, houseOtherOne, houseOtherTwo);
+scene.add(houseOne, houseTwo, houseThree, houseOtherOne, houseOtherTwo, houseOtherThree);
+tent.position.y = 5;
+tent.position.z = -70;
+tent.position.x = 12;
 
-houseTwo.position.z = -20;
+houseTwo.position.z = -5;
 houseTwo.position.x = 15;
 houseTwo.position.y = 15;
 
 houseThree.position.z = -10;
-houseThree.position.x = 32;
+houseThree.position.x = 38;
 houseThree.position.y = 20;
 
-houseOne.position.z = 2;
+houseOtherThree.position.y = 20;
+houseOtherThree.position.x = -38;
+houseOtherThree.position.z = -10
+
+houseOne.position.z =12;
 houseOne.position.x = 15;
 houseOne.position.y = 10;
 
