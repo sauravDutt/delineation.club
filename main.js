@@ -133,18 +133,10 @@ const houseOtherThree = new THREE.Mesh(
     color: 0x604899
   })
 );
-const tent = new THREE.Mesh(
-  new THREE.ConeGeometry(6.78, 10, 64, 62, false, 6.29, 6.2),
-  new THREE.MeshBasicMaterial({
-    color: 0x6c7a91
-  })
-);
 
 
 scene.add(houseOne, houseTwo, houseThree, houseOtherOne, houseOtherTwo, houseOtherThree);
-tent.position.y = 5;
-tent.position.z = -70;
-tent.position.x = 12;
+
 
 houseTwo.position.z = -5;
 houseTwo.position.x = 15;
