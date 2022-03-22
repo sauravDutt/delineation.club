@@ -22,6 +22,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 5;
   width: 100%;
 
 }
@@ -74,4 +75,61 @@ h2 {
   margin: 0 auto;
   margin-top: -20px;
   position: absolute;
+}
+h1 {
+  font-family: 'Logo';
+  cursor: pointer;
+  font-size: 60px;
+  font-weight: 300;
+  margin: 0;
+  background-color: #fff;
+  width: 40%;
+  margin: 0 auto;
+  padding: 0;
+  color: #291a97;
+  margin-top: 40vh;
+  text-align: center;
+}
+.scroll {
+  width: 30%;
+  font-family: 'Logo';
+  font-size: 25px;
+  text-align: center;
+  margin: 0 auto;
+  background-color: #0f00813b;
+  color: rgb(0, 0, 0);
+  margin-top: -32px;
+  -ms-transform: rotate(10deg); /* IE 4.5 */
+  transform: rotate(5deg);
+
+  box-shadow: 0px 10px 5px -10px rgba(27, 23, 23, 0.452);
+}
+.info {
+  background-color: rgba(255, 255, 255, 0.555);
+  padding: 15px;
+  font-size: 25px;
+  line-height: 30px;
+  width: 40%;
+  text-align: justify;
+  margin: 0 auto;
+  margin-top: 590vh;
+  border-radius: 10px ;
+}
+
+@media screen and (max-width: 400px){
+  h1 {
+    font-size: 35px;
+    margin-left: 24%;
+
+  }
+  .scroll {
+    font-size: 15px;
+    font-weight: 100;
+  }
+  .info {
+    margin-top: 620vh;
+    font-size: 20px;
+    width: 70%;
+    background-color: rgba(255, 255, 255, 0.555);
+  }
 }
