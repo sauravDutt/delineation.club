@@ -106,7 +106,7 @@ h1 {
 .info {
   background-color: rgba(255, 255, 255, 0.555);
   padding: 15px;
-  font-size: 25px;
+  font-size: 20px;
   color: #15058f;
   font-family: 'Roboto Mono', monospace;
   line-height: 30px;
@@ -128,9 +128,9 @@ h1 {
     font-weight: 100;
   }
   .info {
-    margin-top: 720vh;
-    font-size: 20px;
-    width: 80%;
+    margin-top: 920vh;
+    font-size: 15px;
+    width: 90%;
     background-color: rgba(255, 255, 255, 0.555);
   }
 }
