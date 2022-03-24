@@ -135,7 +135,7 @@ const houseOtherThree = new THREE.Mesh(
 );
 
 const houseFour = new THREE.Mesh(
-  new THREE.BoxGeometry(10, 10, 10),
+  new THREE.BoxGeometry(10, 20, 10),
   new THREE.MeshStandardMaterial({
     color: 0x85a3d4
   })
@@ -169,7 +169,7 @@ houseOtherTwo.position.z = 3;
 houseOtherTwo.position.x = -20;
 houseOtherTwo.position.y = 15;
 
-houseFour.position.y = 5;
+houseFour.position.y = 10;
 houseFour.position.z = 30;
 houseFour.position.x = 14;
 
