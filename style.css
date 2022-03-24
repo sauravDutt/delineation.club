@@ -107,8 +107,10 @@ h1 {
   background-color: rgba(255, 255, 255, 0.555);
   padding: 15px;
   font-size: 25px;
+  color: #15058f;
+  font-family: 'Roboto Mono', monospace;
   line-height: 30px;
-  width: 40%;
+  width: 50%;
   text-align: justify;
   margin: 0 auto;
   margin-top: 1090vh;
@@ -128,7 +130,7 @@ h1 {
   .info {
     margin-top: 720vh;
     font-size: 20px;
-    width: 70%;
+    width: 80%;
     background-color: rgba(255, 255, 255, 0.555);
   }
 }
