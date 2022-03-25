@@ -60,8 +60,8 @@ h2 {
 }
 .logoBtn {
   float: right;
-  font-size: 20px;
-  margin-top: -32px;
+  font-size: 25px;
+  margin-top: -34px;
   margin-right: 35px;
 }
 .logoBtn:hover {
@@ -116,6 +116,30 @@ h1 {
   margin-top: 1090vh;
   border-radius: 10px ;
 }
+.infoMain {
+  padding: 15px;
+  font-size: 40px;
+  color: #15058f;
+  font-family: 'Logo', monospace;
+  text-align: center;
+  font-weight: 100;
+  line-height: 30px;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 205vh;
+  border-radius: 10px ;
+}
+.infoMain a {
+  font-size: 25px;
+  text-decoration: none;
+  color: #1d1369;
+  cursor: pointer;
+  font-weight: 100;
+}
+
+.infoMain a:hover {
+  color: #291a979f;
+}
 
 @media screen and (max-width: 400px){
   h1 {
@@ -132,5 +156,10 @@ h1 {
     font-size: 15px;
     width: 90%;
     background-color: rgba(255, 255, 255, 0.555);
+  }
+  .infoMain {
+    background-color: rgba(255, 255, 255, 0.555);
+    margin-top: 1090vh;
+    line-height: 35px;
   }
 }
