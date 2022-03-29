@@ -116,6 +116,31 @@ h1 {
   margin-top: 1090vh;
   border-radius: 10px ;
 }
+.infoTitle {
+  background-color: transparent;
+  padding: 15px;
+  font-size: 20px;
+  color: #15058f;
+  font-family: 'Roboto Mono', monospace;
+  line-height: 30px;
+  width: 50%;
+  text-align: justify;
+  margin: 0 auto;
+  border-radius: 10px ;
+}
+.infoTwo {
+  background-color: #fff;
+  padding: 15px;
+  font-size: 20px;
+  color: #15058f;
+  font-family: 'Roboto Mono', monospace;
+  line-height: 30px;
+  width: 50%;
+  text-align: justify;
+  margin: 0 auto;
+  margin-top: -35px;
+  border-radius: 10px ;
+}
 .infoMain {
   padding: 15px;
   font-size: 40px;
@@ -156,6 +181,10 @@ h1 {
     font-size: 15px;
     width: 90%;
     background-color: rgba(255, 255, 255, 0.555);
+  }
+  .infoTwo {
+    font-size: 15px;
+    width: 60%;
   }
   .infoMain {
     background-color: rgba(255, 255, 255, 0.555);
