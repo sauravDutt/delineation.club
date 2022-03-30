@@ -2,6 +2,7 @@
 
 body {
   background-color: #fff;
+  overflow-x: hidden;
 }
 body::-webkit-scrollbar {
   width: 0px;
@@ -206,13 +207,14 @@ h1 {
 .music-container {
   background-color: rgba(255, 255, 255, 0.041);
   border-radius: 15px;
-  border: 3px solid rgba(163, 177, 255, 0.671);
   display: flex;
   padding: 20px 30px;
   position: relative;
+  width: 350px;
   margin: 0 auto;
-  margin-top: 50vh;
+  margin-top: 190vh;
   z-index: 30;
+  box-shadow: 0px 10px 15px -5px rgba(27, 23, 23, 0.171);
 }
 
 .img-container {
@@ -223,7 +225,7 @@ h1 {
 
 .img-container::after {
   content: "";
-  background-color: #414141;
+  background-color: rgba(255, 255, 255, 0.884);
   border-radius: 50%;
   position: absolute;
   bottom: 100%;
@@ -289,12 +291,10 @@ h1 {
 .music-info {
   background-color: transparent;
   border-radius: 15px 15px 0 0;
-  border: 1px solid rgba(86, 107, 224, 0.534);
-  border-bottom: none;
   position: absolute;
   top: 0;
   left: 20px;
-  width: 500px;
+  width: 200px;
   padding: 10px 10px 10px 150px;
   opacity: 0;
   transform: translateY(0%);
@@ -310,6 +310,8 @@ h1 {
 
 .music-info h4 {
   margin: 0;
+  color: #15058f;
+  font-family: 'Roboto Mono', monospace;
 }
 
 .progress-container {
@@ -318,7 +320,7 @@ h1 {
   cursor: pointer;
   margin: 10px 0;
   height: 4px;
-  width: 50%;
+  width: 90%;
 }
 
 .progress {
@@ -372,5 +374,19 @@ h1 {
     font-size: 55px;
     width: 45%;
     line-height: 20px;
+  }
+  .music-container {
+    padding: 20px 22px;
+    width: 290px;
+  }
+  .img-container {
+    margin-left: -30px;
+  }
+  .img-container::after {
+    background-color: transparent;
+  }
+  .music-info {
+    width: 200;
+    margin-left: -55px;
   }
 }
