@@ -129,14 +129,14 @@ h1 {
 .infoTwo {
   background-color: #fff;
   padding: 15px;
-  font-size: 20px;
+  font-size: 9px;
   color: #15058f;
   font-family: 'Roboto Mono', monospace;
-  line-height: 30px;
-  width: 30%;
+  line-height: 20px;
   text-align: justify;
   margin: 0 auto;
-  margin-top: 50px;
+  width: 31%;
+  margin-top: 60px;
   border-radius: 10px ;
   box-shadow: 0px 10px 15px -5px rgba(27, 23, 23, 0.171);
 }
@@ -209,7 +209,8 @@ h1 {
     width: 90%;
   }
   .infoTwo {
-    width: 60%;
+
+  width: 90%;
   }
   .info {
     width: 90%;
@@ -236,8 +237,8 @@ h1 {
     font-size: 15px;
   }
   .infoTwo {
-    font-size: 15px;
-    width: 60%;
+    font-size: 9px;
+    width: 82%;
   }
   .infoMain {
     background-color: #fff;
