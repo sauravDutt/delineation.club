@@ -117,13 +117,12 @@ h1 {
   border-radius: 10px ;
 }
 .infoTitle {
-  padding: 15px;
-  font-size: 20px;
+  font-size: 18px;
   color: #15058f;
   font-family: 'Roboto Mono', monospace;
   line-height: 30px;
   width: 50%;
-  text-align: justify;
+  text-align: left;
   margin: 0 auto;
   border-radius: 10px ;
 }
@@ -143,6 +142,7 @@ h1 {
 }
 .infoMain {
   padding-top: 25px;
+  background-color: rgba(255, 255, 255, 0.596);
   font-size: 40px;
   color: #15058f;
   font-family: 'Logo', monospace;
