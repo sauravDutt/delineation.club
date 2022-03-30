@@ -203,6 +203,132 @@ h1 {
   color: #291a979f;
 }
 
+.music-container {
+  background-color: rgba(255, 255, 255, 0.041);
+  border-radius: 15px;
+  border: 3px solid rgba(163, 177, 255, 0.671);
+  display: flex;
+  padding: 20px 30px;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 50vh;
+  z-index: 30;
+}
+
+.img-container {
+  background-color: transparent;
+  position: relative;
+  width: 110px;
+}
+
+.img-container::after {
+  content: "";
+  background-color: #414141;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  transform: translate(-50%, 50%);
+}
+
+.img-container img {
+  border-radius: 50%;
+  object-fit: cover;
+  height: 110px;
+  width: inherit;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  animation: rotate 3s linear infinite;
+
+  animation-play-state: paused;
+}
+
+.music-container.play .img-container img {
+  animation-play-state: running;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.action-btn {
+  background-color: rgba(255, 255, 255, 0);
+  border: 0;
+  color: #bdbcbd70;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 10px;
+  margin: 0 20px;
+}
+
+.action-btn.action-btn-big {
+  color: #bdbcbd70;
+  font-size: 30px;
+}
+
+.action-btn:focus {
+  outline: 0;
+}
+
+.music-info {
+  background-color: transparent;
+  border-radius: 15px 15px 0 0;
+  border: 1px solid rgba(86, 107, 224, 0.534);
+  border-bottom: none;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  width: 500px;
+  padding: 10px 10px 10px 150px;
+  opacity: 0;
+  transform: translateY(0%);
+  transition: transform 0.3s ease-in, opacity 0.3s ease-in;
+  z-index: 0;
+  color: #000;
+}
+
+.music-container.play .music-info {
+  opacity: 1;
+  transform: translateY(-100%);
+}
+
+.music-info h4 {
+  margin: 0;
+}
+
+.progress-container {
+  background: rgba(115, 109, 141, 0.308);
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px 0;
+  height: 4px;
+  width: 50%;
+}
+
+.progress {
+  background-color: rgba(90, 107, 204, 0.568);
+  border-radius: 5px;
+  height: 100%;
+  width: 0%;
+  transition: width 0.1s linear;
+}
+
 @media screen and (max-width: 750px) {
   .nfts {
     width: 90%;
