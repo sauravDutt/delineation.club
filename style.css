@@ -142,20 +142,22 @@ h1 {
 }
 .infoMain {
   padding-top: 25px;
-  background-color: rgba(255, 255, 255, 0.596);
-  font-size: 40px;
+  background-color: rgb(255, 255, 255);
+  font-size: 50px;
   color: #15058f;
   font-family: 'Logo', monospace;
   text-align: center;
   font-weight: 100;
-  line-height: 30px;
-  width: 50%;
+  line-height: 20px;
+  width: 35%;
   margin: 0 auto;
   margin-top: 205vh;
-  border-radius: 10px ;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 10px 15px -5px rgba(27, 23, 23, 0.171);
 }
 .nfts {
-  background-color: rgba(75, 53, 136, 0.096);
+  background-color: rgba(75, 53, 136, 0.041);
   box-shadow: 0px 10px 15px -5px rgba(27, 23, 23, 0.171);
   border-radius: 15px;
   height: 55vh;
@@ -238,8 +240,11 @@ h1 {
     width: 60%;
   }
   .infoMain {
-    background-color: transparent;
+    background-color: #fff;
     margin-top: 1090vh;
-    line-height: 35px;
+    text-align: center;
+    font-size: 55px;
+    width: 45%;
+    line-height: 20px;
   }
 }
