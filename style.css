@@ -134,7 +134,7 @@ h1 {
   color: #15058f;
   font-family: 'Roboto Mono', monospace;
   line-height: 30px;
-  width: 50%;
+  width: 30%;
   text-align: justify;
   margin: 0 auto;
   margin-top: 50px;
@@ -160,7 +160,7 @@ h1 {
   border-radius: 15px;
   height: 55vh;
   overflow-y: scroll;
-  width: 90%;
+  width: 40%;
   margin: 0 auto;
   padding-bottom: 20px;
   display: grid;
@@ -200,6 +200,18 @@ h1 {
 
 .infoMain a:hover {
   color: #291a979f;
+}
+
+@media screen and (max-width: 750px) {
+  .nfts {
+    width: 90%;
+  }
+  .infoTwo {
+    width: 60%;
+  }
+  .info {
+    width: 90%;
+  }
 }
 
 @media screen and (max-width: 400px){
