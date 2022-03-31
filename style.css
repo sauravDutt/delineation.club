@@ -212,7 +212,7 @@ h1 {
   position: relative;
   width: 350px;
   margin: 0 auto;
-  margin-top: 1250vh;
+  margin-top: 100px;
   z-index: 30;
   box-shadow: 0px 10px 15px -5px rgba(27, 23, 23, 0.171);
 }
@@ -289,7 +289,7 @@ h1 {
 }
 
 .music-info {
-  background-color: transparent;
+  background-color: rgba(107, 107, 107, 0.082);
   border-radius: 15px 15px 0 0;
   position: absolute;
   top: 0;
